@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap course in Tamil</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a href="/" class="navbar-brand">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbLuMgZBrmVaLlATxIxFLyDF7FlK0i9mCwQ&usqp=CAU" width="40" height="40" alt="Bootstrap" loading="lazy" class="d-inline-block align-top"/>
+          Training Institute
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar" aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNavBar">
+          <ul class="navbar-nav ms-auto">
+            <!-- ... (your existing navigation links) ... -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Popover Button -->
+  <button id="welcome" class="btn btn-warning" data-bs-toggle="popover" title="Welcome Offer! Enjoy!" data-bs-container="body"data-bs-placement="bottom" data-bs-content="Grab these coupon codes for next three transactions.">Welcome offer </button>
+
+<button class="btn btn-warning" data-bs-toggle="popover" title="Welcome Offer! Enjoy!" data-bs-container="body" data-bs-placement="top" data-bs-content="Grab these coupon codes for next three transactions." > Welcome offer 2 </button>
+
+<button class="btn btn-warning" data-bs-toggle="popover" title="Welcome Offer! Enjoy!" data-bs-container="body" data-bs-placement="right" data-bs-content="Grab these coupon codes for next three transactions.">
+  Welcome offer 3 </button>
+</div>
+</div>
+
+  <script>
+    var popoverTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+    );
+
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl, {
+        trigger: "focus",
+      });
+    });
+  </script>
+
+</body>
+</html>
